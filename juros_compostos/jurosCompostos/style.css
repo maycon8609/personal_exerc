@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #6c757d;
+}
+
+#container{
+  width: 700px;
+  background: #343a40;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#entrie{
+  padding: 20px;
+}
+
+input{
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 13px;
+  width: 150px;
+  color: #343a40;
+}
+
+#result{
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+#btn{
+  background-color: #007BFF;
+  border-color: #007BFF;
+  color: #343a40;
+  cursor: pointer;
+}
+
+#btn:hover{
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #343a40;
+}

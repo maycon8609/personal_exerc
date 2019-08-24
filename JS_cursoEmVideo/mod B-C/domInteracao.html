@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: darkgrey;
+    }
+</style>
+
+<body>
+
+    <div id='entrada'>
+        <h1>calculadora.. </h1>
+
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="button" value="result" onclick="result()">
+    </div>
+
+    <div id='resultado'>
+        <div id='soma'>resultado..</div>
+        <div id='subtracao'></div>
+        <div id='multiplicacao'></div>
+        <div id='divisao'></div>
+    </div>
+
+    <script>
+        function result() {
+            var txt1 = window.document.getElementById('num1')
+            var txt2 = window.document.getElementById('num2')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var som = n1 + n2
+            var subtr = n1 - n2
+            var multiplic = n1 * n2
+            var divis = n1 / n2
+
+            soma.innerHTML = ` soma ${n1} + ${n2} = ${som} `
+            subtracao.innerHTML = ` subtracao ${n1} - ${n2} = ${subtr} `
+            multiplicacao.innerHTML = ` multiplicacao ${n1} * ${n2} = ${multiplic}`
+            divisao.innerHTML = ` divisao ${n1} / ${n2} = ${divis} `
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div#result {
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>verificar velocidade..</h1>
+
+    velocidade do carro <input type="number" id="txtVelocidade">km/h
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="result">resultado...</div>
+    <p>use sempre o cinto de segurança</p>
+    <div id="hora">Hora certa.. </div>
+
+
+    <script>
+        function verificar() {
+            var txtVel = window.document.getElementById('txtVelocidade')
+            var vel = Number(txtVel.value)
+            var res = window.document.getElementById('result')
+
+            if (vel <= 90) {
+                res.innerHTML = ` Dentro do limite de velocidade `
+                res.style.color = 'blue'
+            } else {
+                res.innerHTML = ` Acima do limite de velocidade `
+                res.style.color = 'crimson'
+            }
+
+            var horaC = window.document.getElementById('hora')
+            var agora = new Date()
+            var hora = agora.getHours()
+            horaC.innerHTML += `  ${hora}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>juros compostos</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>CALCULAR JUROS COMPOSTOS</h1>
+      <p>Preencha os campos e veja o resultado!!</p>
+    </div>
+
+    <div class="container-fluid col-md-12">
+      <div class="row">
+        <div class="col-6 col-md-2 footer">
+          <input type="number" id="valorInit" class="form-control" placeholder=" Valor inicial ">
+        </div>
+        <div class="col-6 col-md-2 footer">
+          <input type="number" id="valorMes" class="form-control" placeholder=" Valor mensal ">
+        </div>
+        <div class="col-6 col-md-2 footer">
+          <input type="number" id="quantAnos" class="form-control" placeholder=" Quantidade de anos ">
+        </div>
+        <div class="col-6 col-md-2 footer">
+          <input type="number" id="taixaJuros" class="form-control" placeholder=" Taixa de juros anual ">
+        </div>
+        <div class="col-6 col-md-2 footer">
+          <button type="button" class="btn btn-primary" onclick="calculator()">Calcular</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron text-center footer">
+      <div id="result">
+        <p>resultado...</p>
+        <br>
+        <div class="footer-copyright text-center text-dark">© 2019 maycon silva</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
