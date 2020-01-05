@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+.header{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #3F74FC;
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+  font-size: 25px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container {
+  background-color: #f2f2f2;
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.col-25 {
+  width: 25%;
+  float: left;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 75%;
+  float: left;
+  scroll-margin-top: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .container ,.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container{
+    width: 85%;
+    margin-top: 4px;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

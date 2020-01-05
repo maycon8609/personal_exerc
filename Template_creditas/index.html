@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREDITAS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Nunito|Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="#logo"><img src="logo-creditas.png" alt="logo creditas" id="logo"></a>
+      <a href="#ajuda">
+        <h1 id="ajuda">Ajuda</h1>
+      </a>
+    </div>
+
+    <div class="content">
+      <h2>Realize uma simulação de credito<br> utilizando seu bem como garantia.</h2>
+    </div>
+
+    <div class="form">
+      <div class="parcelas">
+        <label for="parcelas">Número de parcelas</label><br>
+        <input type="number" class="input fundo_branco">
+      </div>
+
+      <div class="garantia">
+        <label for="garantia">Garantia</label><br>
+        <select name="option" id="option" class="input fundo_branco">
+          <option value="carro">Veiculo</option>
+          <option value="moto">Imovel</option>
+        </select>
+      </div>
+
+      <div class="valor_garantia">
+        <label for="valor_garantia">Valor da Garantia</label><br>
+        <input type="number" class="input fundo_branco">
+      </div>
+
+      <div class="valor_garantia_range">
+        <input type="range" name="valor_garantia_range" class="range" min="0" max="100" value="20" step="10">
+        <div class="range_values">
+          <span>12000</span>
+          <span class="right">24000</span>
+        </div>
+      </div>
+
+      <div class="valor_emprestimo">
+        <label for="valor_emprestimo">Valor do Emprestimo</label><br>
+        <input type="number" class="input fundo_branco">
+      </div>
+
+      <div class="valor_emprestimo_range">
+        <input type="range" name="valor_emprestimo_range" class="range" min="0" max="100" value="50" step="10">
+        <div class="range_values">
+          <span>30000</span>
+          <span class="right">60000</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="view">
+      <div class="valor_parcela">
+        <h4>Valor da Parcela</h4>
+        <strong>R$</strong>
+        <span>465,00</span>
+      </div>
+
+      <div class="total_pagar">
+        <h4>Total a pagar</h4>
+        <strong>R$</strong>
+        <span>10000</span>
+      </div>
+
+      <div class="taxa_juros">
+        <h4>Taxa de Juros (mês)</h4>
+        <p>111,12 %</p>
+      </div>
+
+      <div class="botao">
+        <button>Solicitar</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>The standard chunk of Lorem Ipsum used
+        since the 1500s is reproduced below for
+        those interested. Sections 1.10.32 and
+        1.10.33 from "de Finibus Bonorum et Malorum"
+        The standard chunk of Lorem Ipsum used </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

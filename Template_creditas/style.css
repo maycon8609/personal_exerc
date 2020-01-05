@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  font-family: 'gill sans', sans-serif;
+}
+
+/* container e extrutura geral */
+.container {
+  height: 100vh;
+  display: grid;
+  background-color: #f1f1f1;
+  grid-template:
+        "header header header" 100px
+        "content content content" 1fr
+        "form form view" 100px
+        "form form view" 100px
+        "form form view" 100px
+        "footer footer footer" 1fr
+        / 1fr 1fr 350px;
+}
+
+.header{
+  display: grid;
+  grid-template: "logo h1";
+  background: #46c68c;
+  padding: 10px 40px;
+}
+
+.header img{
+  width: 250px;
+  height: 80px;
+  padding: 10px;
+  grid-area: logo;
+}
+
+.header h1{
+  font-family: 'Baloo', cursive;
+  color: white;
+  float: right;
+  font-size: 2em;
+  padding: 20px 40px;
+  grid-area: ajuda;
+}
+
+.header{
+  grid-area: header;
+}
+
+.content{
+  grid-area: content;
+  font-size: 1.8em;
+  color: #616161;
+  padding: 100px 10px 20px 10px;
+  text-align: center;
+}
+
+.form{
+  grid-area: form;
+}
+
+.view{
+  grid-area: view;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+/* formulario */
+.form {
+  display: grid;
+  grid-template:
+    "parcelas garantia" 100px
+    "valor_garantia valor_garantia_range" 100px
+    "valor_emprestimo valor_emprestimo_range" 100px
+    / 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 10px 30px 10px 30px;
+}
+
+.parcelas{
+  grid-area: parcelas;
+}
+
+.garantia{
+  grid-area: garantia;
+}
+
+.valor_garantia{
+  grid-area: valor_garantia;
+}
+
+.valor_garantia_range{
+  grid-area: valor_garantia_range;
+}
+
+.valor_emprestimo{
+  grid-area: valor_emprestimo;
+}
+
+.valor_emprestimo_range{
+  grid-area: valor_emprestimo_range;
+}
+
+.fundo_branco{
+  background-color: #fff;
+}
+
+.form label{
+  font-weight: 800;
+  color: #585757;
+}
+
+.input{
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 0.8px #ccc;
+  padding: 2px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.range{
+  margin-top: 40px;
+  width: 250px;
+}
+
+.right{
+  float: right;
+}
+
+/* view de resultado */
+.view{
+  display: grid;
+  grid-template:
+      "valor_parcela" 100px
+      "total_pagar" 50px
+      "taxa_juros" 50px
+      "botao" 100px
+      / 200px;
+  background-color: #fff;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 10px 30px 10px 30px;
+  border-radius: 5px;
+  border-top: 4px solid #cbcbcb;
+  text-align: center;
+}
+
+
+.valor_parcela{
+  grid-area: valor_parcela;
+  color: #706e6e;
+  font-weight: 600;
+}
+
+.valor_parcela strong{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #424242;
+}
+
+.valor_parcela span{
+  font-size: 1.7em;
+  color: #46c68c;
+}
+
+.total_pagar{
+  grid-area: total_pagar;
+  color: #8a8888;
+  font-size: 1em;
+}
+
+.total_pagar strong{
+  font-size: 1em;
+  font-weight: bold;
+  color: #424242;
+}
+
+.total_pagar span{
+  color: #424242;
+  font-size: 1.2em;
+}
+
+.taxa_juros{
+  grid-area: taxa_juros;
+  color: #8a8888;
+  font-size: 1em;
+}
+
+.taxa_juros p{
+  color: #424242;
+  font-size: 1.2em;
+}
+
+.botao{
+  grid-area: botao;
+}
+
+.botao button{
+  width: 190px;
+  height: 50px;
+  font-size: 1.4em;
+  background-color: #9FE42E;
+  color: #337731;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
